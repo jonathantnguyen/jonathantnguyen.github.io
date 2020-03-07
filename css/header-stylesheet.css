@@ -1,0 +1,257 @@
+#window-wrap {
+    margin-left:auto;
+    margin-right:auto;
+    width:960px;
+}
+html, body {
+    font-family: "Source Sans Pro Light", sans-serif ;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f5f0;
+}
+
+#index-header{
+    font-size: 16px;
+    padding: 0px;
+    margin: 0 0 15px 0;
+    list-style-type: none;
+}
+
+#header-icon {
+    float:left;
+    display: inline;
+    padding: 10px 10px 0px 10px;
+    outline: none;
+}
+#img-icon {
+    position: relative;
+    width: 65px;
+    height: 65px;
+}
+
+#home-btn:focus, #home-btn:active {
+    outline: none;
+}
+#home-btn {
+    float: left;
+    padding: 0px;
+    position: relative;
+}
+
+.dropdown-btn {
+    background-color: #f3f5f0;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-style: none;
+}
+.single-link-btn {
+    background-color: #f3f5f0;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-style: none;
+    text-decoration: none;
+}
+.dropdown-icon {
+    font-size: 15px;
+    position:relative;
+    padding-right: 10px;
+    bottom: 1px;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+}
+
+.dropdown button:hover {
+    color: darkgrey;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #FFFFFF;
+    min-width: 175px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 6px;
+    left: 25px;
+    font-size: 16px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 9px 0px 9px 15px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:active, .dropdown-content a:focus {
+    outline: none;
+}
+.dropdown-content a:hover {
+    background-color: #e9ecef;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+#search-space {
+    float: right;
+    padding: 8px 15px 0px 0px;
+    position: relative;
+}
+#weatherCity, #weatherZip {
+    font-size: 16px;
+    padding: 7px 0px 8px 15px;
+    border-radius: 5px 0px 0px 5px;
+    border-style: solid;
+    border-width: 1px;
+    width: 250px;
+}
+#getWeather-btn {
+    font-size: 25px;
+    float: right;
+    display: inline-block;
+    -webkit-appearance: none;
+    border-style: solid;
+    border-left: none;
+    background-color: lightgreen;
+    border-radius: 0px 5px 5px 0px;
+    border-width: 1px;
+    width: 50px;
+    padding-bottom: 1px;
+}
+#getWeather-btn::-moz-focus-inner {
+    border: 0;
+}
+
+fieldset {
+    border: none;
+}
+
+#signinfo {
+    padding-left: 40%;
+}
+
+/* index.html */
+
+#myCarousel {
+    font-family: "Source Sans Pro Light", sans-serif;
+    background-color:rgba(192, 194, 190,1.0);
+    max-width: 75%;
+    height: auto;
+    margin-left: 10%;
+}
+
+
+#line-break {
+    opacity: 0.2;
+}
+
+p {
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.resort {
+    display: block;
+    width: 25%;
+    margin-left: 34%;
+}
+
+.resort-btn {
+    font-family: 'Roboto Slab', serif;
+    border-style: solid;
+    border-radius: 10px;
+    min-width: 200px;
+    margin: 10px;
+}
+.resort-btn p {
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+    margin: 0px;
+}
+#meadows {
+    border-color: #ed6a5a;
+    color: #ed6a5a;
+}
+
+#summit {
+    border-color: #5ca4a9;
+    color: #5ca4a9;
+}
+
+#skibowl {
+    border-color: #a8aba3;
+    color: #a8aba3;
+}
+#timberline {
+    border-color: #75daad;
+    color: #75daad;
+}
+
+table{
+    color: cadetblue;
+    border: none;
+    font-size: 30px;
+    background-color: white;
+    width: 100%;
+}
+
+h4{
+    color: cadetblue;
+    font-size: 20px;
+}
+legend {
+    color: darkslategrey;
+    font-size: 15px;
+    border: none;
+}
+th {
+    width: 10%;
+
+}
+
+#weatherInfo {
+    margin: 10px;
+    border: solid black;
+
+}
+#weatherInfo td {
+    text-align: center;
+}
+
+
+/*signup.html*/
+
+#terms-and-conditions {
+    width: 30%;
+    height: 200px;
+    overflow: scroll;
+}
+
+/* print.html */
+
+#maps-info {
+    padding-left: 30%;
+
+}
+#maps-info img {
+    max-width: 25%;
+    height: auto;
+    display: block;
+}

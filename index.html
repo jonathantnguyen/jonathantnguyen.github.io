@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shred Facts</title>
+    <meta charset="UTF-8">
+
+    <link href="css/header-stylesheet.css" rel="stylesheet" type="text/css"> <!--header css //-->
+    <link rel="icon" href="#"> <!-- url icon//-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Source+Code+Pro|Source+Sans+Pro&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+    <ul id="index-header">
+        <li id="header-icon">
+            <a id="home-btn" href="index.html">
+                <img id="img-icon" src="img/snow-icon.png" alt="">
+            </a>
+        </li>
+        <li class="dropdown">
+            <button class="dropdown-btn"><span class="dropdown-icon">&#x25BC;</span>Oregon Resorts</button>
+            <nav class="dropdown-content">
+                <a href="https://www.skihood.com/">Mt. Hood Meadows</a>
+                <a href="https://summitskiarea.com/">Summit Ski Area</a>
+                <a href="http://www.skibowl.com/winter/">Mt. Hood Skibowl</a>
+                <a href="https://www.timberlinelodge.com/">Timberline Lodge and Ski Area</a>
+                <a href="https://www.cooperspur.com/">Cooper Spur Ski and Tubing Area</a>
+            </nav>
+        </li>
+        <li class="dropdown">
+            <a href="compareInfo.html" class="single-link-btn">Compare Info</a>
+        </li>
+        <li class="dropdown">
+            <a href="print.html" class="single-link-btn">Print Maps</a>
+        </li>
+        <li class="dropdown">
+            <a href="signup.html" class="single-link-btn">Sign-up to Weekly News</a>
+        </li>
+        <li id="search-space">
+            <form action="#">
+                <fieldset>
+                    <label for="weatherZip"></label><input id="weatherZip" name="weatherZip" placeholder="97229" type="text">
+                    <label for="weatherCity"></label><input id="weatherCity" name="weatherCity" placeholder="Portland" type="text">
+                    <input id="getWeather-btn" type="submit" value="&#x26B2;">
+                </fieldset>
+            </form>
+        </li>
+    </ul>
+</header>
+<div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <a href="https://www.skihood.com/" class="item active">
+                <img src="img/meadows.png" alt="Meadows">
+            </a>
+
+            <a href="http://www.skibowl.com/winter/" class="item">
+                <img src="img/skibowl.png" alt="Skibowl">
+            </a>
+
+            <a href="https://summitskiarea.com/" class="item">
+                <img src="img/summit.png" alt="Summit">
+            </a>
+
+            <a href="https://www.timberlinelodge.com/" class="item">
+                <img src="img/timberline.png" alt="Timberline">
+            </a>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<table id="weatherInfo">
+    <tr>
+        <th><h4>Weather</h4></th>
+        <th><h4>Location</h4></th>
+        <th><h4>Temp </h4></th>
+        <th><h4>Humidity</h4></th>
+    </tr>
+    <tr>
+        <td><img src="" id="weatherImg" alt=""></td>
+        <td><span id="city"></span></td>
+        <td><span id="temperature"></span></td>
+        <td><span id="humidity"></span></td>
+    </tr>
+</table>
+<div class="resort">
+    <form>
+        <button name="weatherZip" id="meadows" value="97041" class="resort-btn">
+            <p>Mt. Hood Meadows</p>
+        </button>
+        <button name="weatherZip" id="summit" value="97028" class="resort-btn">
+            <p>Summit Ski Area</p>
+        </button>
+        <button name="weatherZip" id="skibowl" value="97028" class="resort-btn">
+            <p>Mt. Hood Skibowl</p>
+        </button>
+        <button name="weatherZip" id="timberline" value="97028" class="resort-btn">
+            <p>Timberline Lodge and Ski Area</p>
+        </button>
+    </form>
+</div>
+
+<script src="js/weather-info.js"></script>
+<script src="js/local-info.js"></script>
+</body>
+</html>

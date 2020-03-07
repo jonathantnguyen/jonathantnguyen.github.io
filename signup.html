@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shred Facts</title>
+    <meta charset="UTF-8">
+
+    <link href="css/header-stylesheet.css" rel="stylesheet" type="text/css"> <!--header css //-->
+    <link rel="icon" href="#"> <!-- url icon//-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Source+Code+Pro|Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <ul id="index-header">
+        <li id="header-icon">
+            <a id= "home-btn" href="index.html">
+                <img id="img-icon" src="img/snow-icon.png" alt="">
+            </a>
+        </li>
+        <li class="dropdown">
+            <button class="dropdown-btn"><span class="dropdown-icon">&#x25BC;</span>Oregon Resorts</button>
+            <nav class="dropdown-content">
+                <a href="https://www.skihood.com/">Mt. Hood Meadows</a>
+                <a href="https://summitskiarea.com/">Summit Ski Area</a>
+                <a href="http://www.skibowl.com/winter/">Mt. Hood Skibowl</a>
+                <a href="https://www.timberlinelodge.com/">Timberline Lodge and Ski Area</a>
+                <a href="https://www.cooperspur.com/">Cooper Spur Ski and Tubing Area</a>
+            </nav>
+        </li>
+        <li class="dropdown">
+            <a href="compareInfo.html" class="single-link-btn">Compare Info</a>
+        </li>
+        <li class="dropdown">
+            <a href="print.html" class="single-link-btn">Print Maps</a>
+        </li>
+        <li class="dropdown">
+            <a href="signup.html" class="single-link-btn">Sign-up to Weekly News</a>
+        </li>
+    </ul>
+</header>
+<div id="signinfo">
+    <h1>Sign-up to our Newsletter!</h1>
+    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" value=""><br><br>
+        <div id="terms-and-conditions">
+            <span id="tac"></span>
+        </div>
+        <label>
+            <input type="checkbox">
+        </label><span>I have read the terms and condition and agree to sign up.</span></br>
+        <input type="submit" value="Sign-up">
+    </form>
+</div>
+<script src="js/tos.js"></script>
+
+</body>
+</html>
